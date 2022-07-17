@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins';
-    color: #fff;
+}
+
+main {
+    padding: 36px;
 }
 
 header {
@@ -11,20 +15,45 @@ header {
     display: flex;
     align-items: center;
     padding: 10px 30px;
+    color: #fff;
 }
 
-header .logo{
+header .logo {
     display: flex;
     align-items: center;
     gap: 5px;
     cursor: pointer;
 }
 
-header .logo img{
+header .logo img {
     height: 50px;
 }
 
-header .extra{
+header .extra {
     margin-left: auto;
+    cursor: pointer;
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+}
+
+.form--button {
+    grid-column: 1 / -1;
+}
+
+.form .form--input{
+    text-indent: .75rem;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+}
+
+.form .form--button{
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border: none;
+    color: #fff;
     cursor: pointer;
 }
